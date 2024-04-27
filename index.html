@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>bankist.app</title>
+  
+</head>
+<body>
+   <header class="head-app">
+    <nav>
+        <h1 class="welcome-message">Log in to get started</h1>
+        <form>
+            <input type="text" placeholder="user" class="username">
+            <input type="text" placeholder="PIN" class="pin" maxlength="4">
+            <button class="submit-user">&rarr;</button>
+        </form>
+    </nav>
+   </header>
+   <section class="body-app container">
+    <header class="header">
+        <div>
+            <p>current balance</p>
+            <span class="curent-date">as of 18/04/2024,11:20</span>
+        </div>
+        <h2 class="balance">25952,59$</h2>
+    </header>
+    <div class="main ">
+        <div class="movments">
+            <div class="movment">
+                    <div class="movment-type">
+                        <span class="type">8 deposit</span>
+                        <span class="movment-date">12/03/2020</span>
+                    </div><!-- movment-type -->
+                    <p class="movment-amount">1300,00$</p>
+            </div><!-- movment -->
+        </div><!-- movments -->
+        <div class="operations">
+            <div class="transfer">
+                <h3>transfer money</h3>
+                <form class="transfer-form form">
+                    <input type="text" class="user-to-transfer">
+                    <input type="text" class="amount-to-transfer">
+                    <button class="submit-transfer">&rarr;</button>
+                </form>
+                <div class="label">
+                    <p>transfer to</p>
+                    <p>amount</p>
+                </div>
+            </div><!-- transfer -->
+            <div class="loan">
+                <h3>request loan</h3>
+                <form class="loan-form form">
+                    <input type="text" class="loan-amount">
+                    <button class="submit-loan">&rarr;</button>
+                </form>
+                <div class="label">
+                    <p>amount</p>
+                </div>
+            </div><!-- loan -->
+            <div class="close">
+                <h3>close account</h3>
+                <form class="close-form form">
+                    <input type="text" class="account-to-close">
+                    <input type="text" maxlength="4" class="pin-to-close">
+                    <button class="submit-close">&rarr;</button>
+                </form>
+                <div class="label">
+                    <p>confirm user</p>
+                    <p>confirm pin</p>
+                </div>
+            </div><!-- close -->
+        </div><!-- operations -->
+    </div><!-- main -->
+    <footer>
+        <div class="acc-info">
+            <p>in <span class="in">27035,20$</span></p>
+            <p>out <span class="out">1082,61$</span></p>
+            <p>interest <span class="interest">323,64$</span></p>
+        </div><!-- acc-info -->
+        <p class="log-out">you will be logged out in <span class="timer">06:50</span></p>
+    </footer>
+   </section><!-- body-app container -->
+    <script src="./script.js"></script>
+</body>
+</html>

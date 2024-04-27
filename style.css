@@ -1,0 +1,193 @@
+/* general rule */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: #eee;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+/* start body-app */
+.body-app{
+    opacity: 0;
+    transition: 1s;
+}
+/* end body-app */
+/* start head-app */
+.head-app{
+    padding: 20px 50px;
+}
+.head-app nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-app nav form input{
+    border: none;
+    width: 100px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 50px;
+    color: #777;
+    margin: 0 7px;
+    outline: none;
+}
+.head-app nav form input:focus{
+    border: 1px solid #777;
+}
+.head-app nav form button{
+    border: none;
+    font-size: 24px;
+    background-color: #eee;
+    cursor: pointer;
+}
+/* end  head-app   */
+/* start body-app */
+.body-app .header{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.body-app .header div p{
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.body-app .header div span{
+    color: #777;
+    text-transform: capitalize;
+}
+.body-app .header h2{
+    font-size: 50px;
+}
+/* end body-app */
+/* start main */
+.main{
+    display: flex;
+    gap: 20px;
+}
+.main .movments{
+    flex: 2;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    height: 483px;
+    overflow-y: scroll;
+}
+.main .movments .movment{
+    padding:25px 30px ;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .movments .movment .movment-type{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.main .movments .movment .type{
+    background-color: green;
+    color: white;
+    border-radius: 15px;
+    padding: 2px 7px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.main .operations{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.transfer{
+    background-color:orange;
+}
+.loan{
+    background-color: green;
+}
+.close{
+    background-color: rgb(159, 26, 159);
+}
+.main .operations > div{
+    height: 150px;
+    padding: 30px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+.main .operations > div h3{
+    margin-bottom: 10px;
+}
+.main .operations > div .label{
+    display:flex;
+}
+.main .operations > div .label p{
+    font-size: 12px;
+}
+.main .operations > div .label p:first-child{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.main .operations > div .label p:last-child{
+    margin-left: 35px;
+    margin-top: 5px;
+}
+.main .operations > div.transfer .label p:last-child{
+    margin-left: 60px;
+    margin-top: 5px;
+}
+.main .operations > div form{
+    display: flex;
+}
+.main .operations > div form button{
+    background-color: white;
+    cursor: pointer;
+    font-size: 17px;
+    width: 40px;
+    border: none;
+    border-radius: 10px;
+}
+.main .operations > div input {
+    border: none;
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: white;
+    color: #777;
+    margin-right: 8px;
+    outline: none;
+}
+/* end main */
+/* start footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+footer .acc-info{
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+}
+footer .acc-info p{
+    font-size: 12px;
+}
+footer .acc-info span{
+    font-size: 20px;
+    margin-left: 3px;
+    color: green;
+}
+footer .acc-info span.out{
+    color: red;
+}
+/* end footer */
